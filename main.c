@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 18:22:56 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/28 18:42:23 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/09/30 21:39:02 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int main(int argc, char *argv[])
 	first_push(&a, &b);
 	sort_three(&a);
 	target(&a, &b, size);
+	cost_a(&a, &b);
+	cost_b(&b);
     print_list(&a, "A");
     print_list(&b, "B");
 }

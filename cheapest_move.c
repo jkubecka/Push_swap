@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   prints.c                                           :+:      :+:    :+:   */
+/*   cheapest_move.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/07 18:27:43 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/30 21:38:17 by jkubecka         ###   ########.fr       */
+/*   Created: 2024/10/01 17:17:11 by jkubecka          #+#    #+#             */
+/*   Updated: 2024/10/01 17:20:47 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	print_list(t_list **lst, char *str)
+void	cheapest_move(t_list **a, t_list **b)
 {
-	t_list *temp;
+	t_list	*aux;
 
-	temp = *lst;
-	printf("%s\n", str);
-	while(temp)
+	aux = ft_cheapest(b);
+	if (aux->cost_a < 0 && aux->cost_b < 0)
 	{
-		printf("Value: %i  Pos: %i  Index: %i  Target_pos: %i	Cost_a: %i	Cost_b: %i\n", temp->value, temp->pos, temp->index, temp->target_pos, temp->cost_a, temp->cost_b);
-		temp = temp->next;
+		
 	}
 }

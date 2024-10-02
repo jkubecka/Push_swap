@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 18:19:56 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/28 18:17:40 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/01 17:16:56 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,10 @@ t_list	*ft_min(t_list **a);
 t_list	*ft_max(t_list **a);
 //Target
 void	target(t_list **a, t_list **b, int size);
+//Cost
+void	cost_b(t_list **b);
+void	cost_a(t_list **a, t_list **b);
+t_list	*ft_cheapest(t_list **b);
+//Cheapest moves
+
 #endif
