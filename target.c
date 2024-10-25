@@ -6,11 +6,11 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 20:16:05 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/28 18:30:59 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/03 19:54:04 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+/* #include "push_swap.h"
 
 void	set_target_next(t_list **a, t_list *node_b, int size)
 {
@@ -65,3 +65,4 @@ void	target(t_list **a, t_list **b, int size)
 		temp = temp->next;
 	}
 }
+ */

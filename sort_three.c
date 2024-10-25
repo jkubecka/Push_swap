@@ -6,11 +6,19 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 20:23:43 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/28 18:07:30 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:13:00 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+int	ft_max_int(int a, int b)
+{
+	if (a > b)
+		return (a);
+	else
+		return (b);
+}
 
 t_list	*ft_max(t_list **a)
 {

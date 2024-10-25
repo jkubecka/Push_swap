@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 20:53:45 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/30 21:35:10 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:32:37 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	cost_a(t_list **a, t_list **b)
 	temp = *b;
 	aux = *a;
 	len = ft_lstsize(aux);
+	pair = 0;
 	if (len % 2 != 0)
 		pair = 1;
 	half = (len / 2) + pair;

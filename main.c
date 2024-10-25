@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 18:22:56 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/30 21:39:02 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:22:31 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_set_pos(t_list **lst)
 	int	i;
     t_list *aux;
      
-	i = 1;
+	i = 0;
     aux = *lst;
 	while (aux)
 	{
@@ -57,8 +57,9 @@ int main(int argc, char *argv[])
 	first_push(&a, &b);
 	sort_three(&a);
 	target(&a, &b, size);
-	cost_a(&a, &b);
-	cost_b(&b);
+	//cost_a(&a, &b);
+	//cost_b(&b);
+	set_cost(&a, &b);
     print_list(&a, "A");
     print_list(&b, "B");
 }

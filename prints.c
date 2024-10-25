@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 18:27:43 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/30 21:38:17 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:24:12 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	print_list(t_list **lst, char *str)
 	printf("%s\n", str);
 	while(temp)
 	{
-		printf("Value: %i  Pos: %i  Index: %i  Target_pos: %i	Cost_a: %i	Cost_b: %i\n", temp->value, temp->pos, temp->index, temp->target_pos, temp->cost_a, temp->cost_b);
+		printf("Value: %i  Pos: %i  Index: %i   cost_a: %i   cost_b: %i	  cost_t: %i\n", temp->value, temp->pos, temp->index, temp->cost_a, temp->cost_b, temp->cost_t);
 		temp = temp->next;
 	}
 }

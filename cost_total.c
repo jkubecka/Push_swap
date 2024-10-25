@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 16:26:52 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/10/01 17:19:23 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/03 20:48:11 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,6 @@ int	cost_total(t_list **b)
 		cost_a = cost_a * -1;
 	if (cost_b < 0)
 		cost_b = cost_b * -1;
-	total = cost_a + cost_a;
+	total = cost_a + cost_b;
 	return (total);
 }

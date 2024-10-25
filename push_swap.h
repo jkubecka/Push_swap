@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 18:19:56 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/10/01 17:16:56 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:47:19 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,13 @@ typedef struct s_list
 	int		value;
 	int		pos;
 	int		index;
-	int 	target_pos;
+	//int 	target_pos;
 	int		cost_a;
 	int		cost_b;
+	int		cost_t;
+	int		op_a;
+	int		op_b;
+	
 	struct s_list	*next;
 } t_list;
 
@@ -61,6 +65,7 @@ void	rr(t_list **a, t_list **b);
 void reverserotate(t_list **lst);
 void	rra(t_list **a);
 void	rrb(t_list **b);
+void	rrr(t_list **a, t_list **b);
 //First push
 void	first_push(t_list **a, t_list **b);
 //Sort_three
@@ -68,11 +73,13 @@ void	sort_three(t_list **a);
 t_list	*ft_min(t_list **a);
 t_list	*ft_max(t_list **a);
 //Target
-void	target(t_list **a, t_list **b, int size);
+//void	target(t_list **a, t_list **b, int size);
+t_list	*find_target(t_list **a, t_list *node_b);
 //Cost
-void	cost_b(t_list **b);
-void	cost_a(t_list **a, t_list **b);
-t_list	*ft_cheapest(t_list **b);
+//void	cost_b(t_list **b);
+//void	cost_a(t_list **a, t_list **b);
+//t_list	*ft_cheapest(t_list **b);
+void	set_cost(t_list **a, t_list **b);
 //Cheapest moves
 
 #endif

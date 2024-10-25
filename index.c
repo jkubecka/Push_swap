@@ -6,7 +6,7 @@
 /*   By: jkubecka <jkubecka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 20:47:15 by jkubecka          #+#    #+#             */
-/*   Updated: 2024/09/08 13:54:00 by jkubecka         ###   ########.fr       */
+/*   Updated: 2024/10/02 18:56:47 by jkubecka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void ft_order_array(int *array, int len)
 		else
 			i++;
 	}
-	i = 0;
+	//i = 0;
 /* 	printf("ARRAY ordenado : ");
 	while (len2--)
 	{
